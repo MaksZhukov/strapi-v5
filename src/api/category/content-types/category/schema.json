@@ -24,6 +24,12 @@
       "target": "api::article.article",
       "mappedBy": "category"
     },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "categories"
+    },
     "description": {
       "type": "text"
     }
